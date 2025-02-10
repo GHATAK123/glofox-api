@@ -109,9 +109,29 @@ This is a Golang implementation of the Glofox API, designed to help boutique stu
 
 ### Unit Tests
 
-Run unit tests to verify the functionality of individual components:
-```bash
-go test ./test/class_handler_test.go ./test/booking_handler_test.go
-
-
+- Run the unit test cases:
+   ```bash
+   go test ./test/class_handler_test.go ./test/booking_handler_test.go
    
+### Integration Tests
+
+- Run the integration test cases:
+   ```bash
+   go test ./test/integration_test.go
+
+## Assumptions
+- Authentication: No authentication is required for the APIs.
+- Class Uniqueness: Only one class can be created per day.
+- Overbooking: Overbooking is not handled. The number of bookings can exceed the class capacity.
+- In-Memory Storage: Data is stored in memory and will be lost when the application restarts.
+
+## Future Improvements
+- Database Integration: Replace in-memory storage with a database (e.g., PostgreSQL, MySQL) for persistent data storage.
+- Authentication: Add authentication and authorization to secure the API endpoints.
+- Overbooking Handling: Implement logic to prevent overbooking for a given class date.
+- Class Scheduling: Allow multiple classes to be scheduled on the same day.
+- API Documentation: Use tools like Swagger to generate API documentation.
+
+## Contact
+For questions or feedback, please reach out to ppa58514@gmail.com.
+

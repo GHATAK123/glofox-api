@@ -66,6 +66,42 @@ This is a Golang implementation of the Glofox API, designed to help boutique stu
 
 3. The server will be accessible at `http://localhost:8080`
 
-#API Endpoints
+## API Endpoints
 
-Create a Class
+### Create a Class
+
+- **Endpoint** : `POST /classes`
+- **Request Body** :
+   ```json
+   {
+     "name": "Yoga",
+     "start_date": "2025-02-11T00:00:00Z",
+     "end_date": "2025-02-21T00:00:00Z",
+     "capacity": 10
+   }
+- **Request Body** :
+   ```json
+   {
+     "name": "Yoga",
+     "start_date": "2025-02-11T00:00:00Z",
+     "end_date": "2025-02-21T00:00:00Z",
+     "capacity": 10
+   }
+
+   
+ ### Book a Class
+
+- **Endpoint** : `POST /bookings`
+- **Request Body** :
+   ```json
+   {
+     "name": "Prakash Anand",
+     "date": "2025-02-16T00:00:00Z"
+   }
+- **Request Body** :
+   ```json
+   {
+     "class_name": "Yoga",
+     "member": "Prakash Anand",
+     "date": "2025-02-16"
+   } 

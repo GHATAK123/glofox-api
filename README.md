@@ -47,3 +47,25 @@ This is a Golang implementation of the Glofox API, designed to help boutique stu
    ```bash
    git clone https://github.com/GHATAK123/glofox-api.git
    cd glofox-api
+
+2. Clone the repository:
+   ```bash
+   go run main.go
+
+3. The server will start on `http://localhost:8080`
+
+### Running with Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t glofox-api .
+
+2. Run the Docker container:
+   ```bash
+   docker run -p 8080:8080 glofox-api
+
+3. The server will be accessible at `http://localhost:8080`
+
+#API Endpoints
+
+Create a Class

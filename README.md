@@ -17,7 +17,6 @@ This is a Golang implementation of the Glofox API, designed to help boutique stu
 4. [Testing](#testing)
    - [Unit Tests](#unit-tests)
    - [Integration Tests](#integration-tests)
-   - [End-to-End Tests](#end-to-end-tests)
 5. [Assumptions](#assumptions)
 6. [Future Improvements](#future-improvements)
 
@@ -104,4 +103,15 @@ This is a Golang implementation of the Glofox API, designed to help boutique stu
      "class_name": "Yoga",
      "member": "Prakash Anand",
      "date": "2025-02-16"
-   } 
+   }
+
+## Testing
+
+### Unit Tests
+
+Run unit tests to verify the functionality of individual components:
+```bash
+go test ./test/class_handler_test.go ./test/booking_handler_test.go
+
+
+   
